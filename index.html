@@ -19,8 +19,8 @@
     
 <style>
   */ {
-    font-family: "Rock Salt", "Helvetica Neue", helvetica, arial, sans-serif;
-    box-sizing: border-box;
+    font-family: "Rock Salt", "Helvetica", helvetica, sans-serif, cursive;
+    margin: 2em;
 }
   
   body { 
@@ -33,45 +33,53 @@ table {
    width: 100%;
    height: 100%;
    table-layout: fixed;
-   border: #800080;
+   border-collapse: collapse;
+   border-color: #800080;
   }
-thead {
+thead, tfoot{
   background-image: url("assets/leopardskin.jpg");
-    color: white;
-    font-family: "Rock Salt", sans-serif;
+  color: white;
+  padding: 2.5em;
+  border: #800080 solid;
+  
+  font-family: "Rock Salt", sans-serif;
+  font-size: 1rem;
+  padding: 1em, 1em;
+  
 }
 tbody {
-    color: black;
-    text-align: center;  
-    font-family: "Helvetica Neue", helvetica, arial;
-    font-size: 1em;
-    padding: 0.5em, 2em;
-}
-#overlay{
-  
-  position: fixed; 
- 
+    margin: 1em;
+    
 }
 tbody tr:nth-child(odd) {
   background: #ff33cc;
+  background-image: url("assets/noise.png");
 }
 tbody tr:nth-child(even){
   background: #e495e4;
+  background-image: url("assets/noise.png");
 
 }
-tfoot {
-    background-image: url("assets/leopardskin.jpg");
-    color: white;
-    font-family: "Rock Salt", sans-serif;
+th {
+  padding: 2.5em;
+  border: #800080 solid;
 
 }
 td {
+  color: black;
+    text-align: center;  
+    font-family: "Helvetica Neue", helvetica, arial;
+    text-align: center;
+    font-size: 2rem;
+    font-weight:900;
   text-align: center;
+  padding: 1rem;
 
 }
 .tableCaption{
   font-family: "Rock Salt", Arial, Helvetica, sans-serif;
   font-size: 1em;
+  offset-block-end: auto;
 
 }
 
@@ -85,64 +93,62 @@ td {
           <th>BAND</th>
           <th>YEAR FORMED</th> 
           <th>NO. OF ALBUMS</th>
-          <th>MOST FAMOUS SONGS</th>
+          <th>MOST FAMOUSE SONGS</th>
         </tr>
       </thead>
-      <div id="overlay">
       <tbody>
       <tr>
-        <td><strong>Buzzcocks</strong></td>
+        <td>Buzzcocks</td>
         <td>1976</td>
         <td>9</td>
         <td>Ever fallen in love (with somebody you shouldn't've)</td>
         </tr>
         <tr>
-          <td><strong>The Clash</strong></td>
+          <td>The Clash</td>
           <td>1976</td>
           <td>6</td>
           <td>London Calling</td>
         </tr>
         <tr>
-          <td><strong>The Damned</strong></td>
+          <td>The Damned</td>
           <td>1976</td>
           <td>10</td>
           <td>Smash it up</td>
         </tr>
         <tr>
-          <td><strong>Sex Pistols</strong></td>
+          <td>Sex Pistols</td>
           <td>1975</td>
           <td>1</td>
           <td>Anarchy in the UK</td>
         </tr>
         <tr>
-          <td><strong>Sex Pistols</strong></td>
+          <td>Sex Pistols</td>
           <td>1976</td>
           <td>13</td>
           <td>If The Kids Are United</td>
         </tr>
         <tr>
-          <td><strong>Siouxsie and the Banshees</strong></td>
+          <td>Siouxsie and the Banshees</td>
           <td>1976</td>
           <td>11</td>
           <td>Hong Kong Garden</td>
         </tr>
         <tr>
-          <td><strong>Stiff Little Fingers</strong></td>
+          <td>Stiff Little Fingers</td>
           <td>1977</td>
           <td>10</td>
           <td>Suspect Device</td>
         </tr>
         <tr>
-          <td><strong>The Stranglers</strong></td>
+          <td>The Stranglers</td>
           <td>1974</td>
           <td>17</td>
           <td>No More Heroes</td>
         </tr>
       </tbody>
-    </div>
       <tfoot>
         <td colspan="2" style="text-align:right;">Total Albums</td>
-        <td colspan="2" style="text-align:center;">77</td>
+        <td colspan="2" style="text-align:left;">77</td>
           <caption class="tableCaption">A summary of the UK's most famous punk bands</caption>
           <tr>
         
