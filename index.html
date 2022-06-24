@@ -19,7 +19,7 @@
     
 <style>
   */ {
-    font-family: "Rock Salt", "Helvetica", helvetica, sans-serif, cursive;
+    font-family: "Rock Salt", "Helvetica", helvetica, sans-serif;
     margin: 1rem;
 }
   
@@ -34,21 +34,21 @@ table {
    height: 100%;
    table-layout: fixed;
    border-collapse: collapse;
-   border-color: #800080;
+  
   }
 thead, tfoot{
   background-image: url("assets/leopardskin.jpg");
   color: white;
-  padding: 2.5em;
-  border: #800080 solid;
-  
   font-family: "Rock Salt", sans-serif;
   font-size: 1rem;
-  padding: 1rem, 1rem;
+  
+  
   
 }
 tbody {
-    margin: 1em;
+    margin: 0;
+    border: #800080 solid;
+    
     
 }
 tbody tr:nth-child(odd) {
@@ -61,26 +61,26 @@ tbody tr:nth-child(even){
 
 }
 th {
-  padding: 1.5em;
+  padding: 1rem;
   border: #800080 solid;
 
 }
 td {
   color: black;
     text-align: center;  
-    font-family: "Helvetica Neue", helvetica, arial;
+    font-family: "Helvetica Neue", helvetica, Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 1rem;
-    font-weight:900;
+    font-weight: 800;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
 
 }
 .tableCaption{
-  font-family: "Rock Salt", Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  position: relative;
-  offset-position: top 10em;
+  font-family: "Rock Salt", Arial, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  caption-side: bottom;
+  
 
 }
 
@@ -123,7 +123,7 @@ td {
           <td>Anarchy in the UK</td>
         </tr>
         <tr>
-          <td>Sex Pistols</td>
+          <td>Sham 69</td>
           <td>1976</td>
           <td>13</td>
           <td>If The Kids Are United</td>
@@ -149,7 +149,7 @@ td {
       </tbody>
       <tfoot>
         <th colspan="2" style="text-align:right;">Total Albums</th>
-        <th colspan="2" style="text-align:left;">77</th>
+        <th colspan="2" style="text-align:left; font-family: sans-serif;">77</th>
           <caption class="tableCaption">A summary of the UK's most famous punk bands</caption>
           <tr>
         
