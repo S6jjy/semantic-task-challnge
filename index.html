@@ -20,11 +20,12 @@
 <style>
   */ {
     font-family: "Rock Salt", "Helvetica", helvetica, sans-serif;
-    margin: 1rem;
+    margin: 0rem;
 }
   
   body { 
-    margin: 0.5rem;
+    background-color:white;
+    margin: 0.3rem;
     
     
   }
@@ -38,11 +39,10 @@ table {
   }
 thead, tfoot{
   background-image: url("assets/leopardskin.jpg");
+  background: linear-gradient((0,0,0,1),(0,0,0,5));
   color: white;
   font-family: "Rock Salt", sans-serif;
   font-size: 1rem;
-  
-  
   
 }
 tbody {
@@ -63,6 +63,7 @@ tbody tr:nth-child(even){
 th {
   padding: 1rem;
   border: #800080 solid;
+  
 
 }
 td {
@@ -71,7 +72,7 @@ td {
     font-family: "Helvetica Neue", helvetica, Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 600;
   text-align: center;
   padding: 1rem;
 
@@ -83,13 +84,22 @@ td {
   
 
 }
+.gradient{
+  background: linear-gradient((0,0,0,1),(0,0,0,5));
+}
+.bandNames {
+  font-family: 800;
+}
+
 
 </style>
+<div>
   </head> 
   <main> 
   <body>
     <table>
-      <thead>
+      
+      <thead class="gradient-fill">
         <tr>
           <th>BAND</th>
           <th>YEAR FORMED</th> 
@@ -97,73 +107,77 @@ td {
           <th>MOST FAMOUSE SONGS</th>
         </tr>
       </thead>
+      </div>
       <tbody>
       <tr>
-        <td>Buzzcocks</td>
+        <td class="bandNames">Buzzcocks</td>
         <td>1976</td>
         <td>9</td>
         <td>Ever fallen in love (with somebody you shouldn't've)</td>
         </tr>
         <tr>
-          <td>The Clash</td>
+          <td class="bandNames">The Clash</td>
           <td>1976</td>
           <td>6</td>
           <td>London Calling</td>
         </tr>
         <tr>
-          <td>The Damned</td>
+          <td class="bandNames">The Damned</td>
           <td>1976</td>
           <td>10</td>
           <td>Smash it up</td>
         </tr>
         <tr>
-          <td>Sex Pistols</td>
+          <td class="bandNames">Sex Pistols</td>
           <td>1975</td>
           <td>1</td>
           <td>Anarchy in the UK</td>
         </tr>
         <tr>
-          <td>Sham 69</td>
+          <td class="bandNames">Sham 69</td>
           <td>1976</td>
           <td>13</td>
           <td>If The Kids Are United</td>
         </tr>
         <tr>
-          <td>Siouxsie and the Banshees</td>
+          <td class="bandNames">Siouxsie and the Banshees</td>
           <td>1976</td>
           <td>11</td>
           <td>Hong Kong Garden</td>
         </tr>
         <tr>
-          <td>Stiff Little Fingers</td>
+          <td class="bandNames">Stiff Little Fingers</td>
           <td>1977</td>
           <td>10</td>
           <td>Suspect Device</td>
         </tr>
         <tr>
-          <td>The Stranglers</td>
+          <td class="bandNames">The Stranglers</td>
           <td>1974</td>
           <td>17</td>
           <td>No More Heroes</td>
         </tr>
       </tbody>
-      <tfoot>
+      
+      <tfoot class="gradient-fill">
         <th colspan="2" style="text-align:right;">Total Albums</th>
         <th colspan="2" style="text-align:left; font-family: sans-serif;">77</th>
           <caption class="tableCaption">A summary of the UK's most famous punk bands</caption>
-          <tr>
+      
         
       
         </tfoot>
+        
       
       
     </table>
   </main>
   </body>
 </div>
-<div>
+
   <footer>
 
   </footer>
+
 </div>
 </html>
