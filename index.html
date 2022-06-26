@@ -38,9 +38,8 @@ table {
   
   }
 thead, tfoot{
-  background-image: url("assets/leopardskin.jpg");
-  background: linear-gradient((0,0,0,1),(0,0,0,5));
-  color: white;
+  background: url("assets/leopardskin.jpg"), linear-gradient(0deg, blue, green 40%, red);
+  background-color: white;
   font-family: "Rock Salt", sans-serif;
   font-size: 1rem;
   
@@ -63,6 +62,7 @@ tbody tr:nth-child(even){
 th {
   padding: 1rem;
   border: #800080 solid;
+  background: linear-gradient(to top black 100%);    /* COULD NOT FIX GRADIENT . DONT KNOW WHY */
   
 
 }
@@ -84,16 +84,14 @@ td {
   
 
 }
-.gradient{
-  background: linear-gradient((0,0,0,1),(0,0,0,5));
-}
+
 .bandNames {
-  font-family: 800;
+  font-weight:800;
 }
 
 
 </style>
-<div>
+
   </head> 
   <main> 
   <body>
@@ -107,7 +105,7 @@ td {
           <th>MOST FAMOUSE SONGS</th>
         </tr>
       </thead>
-      </div>
+  
       <tbody>
       <tr>
         <td class="bandNames">Buzzcocks</td>
@@ -159,7 +157,7 @@ td {
         </tr>
       </tbody>
       
-      <tfoot class="gradient-fill">
+      <tfoot>
         <th colspan="2" style="text-align:right;">Total Albums</th>
         <th colspan="2" style="text-align:left; font-family: sans-serif;">77</th>
           <caption class="tableCaption">A summary of the UK's most famous punk bands</caption>
